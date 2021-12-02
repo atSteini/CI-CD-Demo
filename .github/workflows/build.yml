@@ -37,4 +37,5 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       #Run Tests
       - name: Run Tests
+        working-directory: .\ccd-backend\
         run: mvn -B test
